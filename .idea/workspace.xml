@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20e270dc-a96a-4d52-9585-7e71cb32ab15" name="Default Changelist" comment="" />
+    <list default="true" id="20e270dc-a96a-4d52-9585-7e71cb32ab15" name="Default Changelist" comment="Implement JPA Repositories">
+      <change afterPath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/repositories/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/repositories/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gurs/springframework/springwebapp/model/Book.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +54,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UPmJNCYOobGLrD3AejxvxkGeAe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +85,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="SpringwebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -85,12 +101,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:testdb" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -107,18 +118,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575266532717</updated>
-      <workItem from="1575266538832" duration="6776000" />
+      <workItem from="1575266538832" duration="8174000" />
+      <workItem from="1575292247444" duration="604000" />
+      <workItem from="1575360830691" duration="1688000" />
     </task>
+    <task id="LOCAL-00001" summary="git-ignore file modified">
+      <created>1575292700294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575292700295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git-ignore file modified" />
+    <MESSAGE value="Implement JPA Repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement JPA Repositories" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Assign_Data_Sources" timestamp="1575290388159">
+    <state x="361" y="70" key="#Assign_Data_Sources" timestamp="1575362603772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="70" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1575290388159" />
+    <state x="361" y="70" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1575362603772" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575290185180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -127,45 +166,69 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1575289498653" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1575290261129">
+    <state x="384" y="6" key="CommitChangelistDialog2" timestamp="1575362546489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575290261129" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1575290261129">
+    <state x="384" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575362546489" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1575292621931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575290261129" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1575290261129">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1575292621931" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1575362719532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575290261129" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1575290261129">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575362719532" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1575362719532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575290261129" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1575290261130">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575362719532" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1575362719531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575290261130" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1575290261130">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575362719531" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1575362719532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575290261130" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1575290261129">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575362719532" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1575362719533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575290261129" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1575290261130">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575362719533" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1575362719533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575290261130" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1575290560257">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575362719533" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1575362719533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575290560257" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575266542013">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575362719533" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1575362719533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575266542013" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575362719533" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1575292216002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575292216002" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575293038027">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575293038027" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1575292850839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.824@0.0.1536.824" timestamp="1575292850839" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575361089054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575361089054" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575292881127">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1575292881127" />
+    <state x="542" y="203" key="git4idea.merge.GitMergeDialog" timestamp="1575292993167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="542" y="203" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1575292993167" />
   </component>
 </project>
